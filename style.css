@@ -142,7 +142,7 @@ section {
 }
 
 .typing-text span::before {
-  content: "Software Developer";
+  content: "Backend Developer";
   color: var(--main-color);
   animation: words 20s infinite;
 }
@@ -155,7 +155,7 @@ section {
   height: 100%;
   border-left: 3px solid var(--bg-color);
   right: -8px;
-  animation: cursor 0.6s infinite, typing 20s steps(17) infinite;
+  animation: cursor 0.6s infinite, typing 20s steps(18) infinite;
 }
 
 @keyframes cursor {
@@ -169,13 +169,25 @@ section {
   20% {
     content: "Frontend Developer";
   }
+
   21%,
   40% {
     content: "Backend Developer";
   }
+
   41%,
   60% {
     content: "Software Engineer";
+  }
+
+  61%,
+  80% {
+    content: "Database Engineer";
+  }
+
+  81%,
+  100% {
+    content: "API Developer";
   }
 }
 
@@ -712,16 +724,10 @@ section {
 }
 
 @media (max-width: 600px) {
-  .typing-text {
-    /* font-size: clamp(1rem, 3.5vw, 1.5rem); */
-    font-size: 3rem;
-    min-width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
   .typing-text span::before {
-    content: "Software Eng";
+    font-size: 3rem;
+    content: "Backend Dev";
+    min-width: 100%;
     animation: words-mobile 20s steps(14) infinite;
   }
 }
@@ -736,7 +742,15 @@ section {
     content: "Backend Dev";
   }
   41%,
-  100% {
+  60% {
     content: "Software Eng";
+  }
+  61%,
+  80% {
+    content: "Database Eng";
+  }
+  81%,
+  100% {
+    content: "API Develpoer";
   }
 }
