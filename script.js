@@ -1,6 +1,7 @@
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 const mailtoFormBtn = document.querySelector('#mailto-form');
+const reviewBtn = document.querySelectorAll('.review-btn');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
@@ -17,4 +18,11 @@ mailtoFormBtn.addEventListener('click', event => {
     const body = `Name: ${name} Email: ${email} Phone Number: ${phoneNumber} Message: ${message}`;
     const mailtoLink = `mailto:williamonyejiaka08062528003@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
+});
+
+reviewBtn.forEach(btn => {
+    btn.addEventListener('click', event => {
+        const url = btn.dataset.url;
+        window.open(url, "_blank");
+    });
 });

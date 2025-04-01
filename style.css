@@ -27,7 +27,7 @@
 
 html {
   font-size: 60%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -106,6 +106,7 @@ span {
 section {
   min-height: 100vh;
   padding: 10rem 15%;
+  /* padding: 10rem 10rem; */
 }
 
 .home {
@@ -130,7 +131,6 @@ section {
 }
 
 .typing-text {
-  /* font-size: 34px; */
   margin: 1rem 0;
   font-size: 3rem;
   font-weight: 600;
@@ -724,6 +724,20 @@ section {
 }
 
 @media (max-width: 600px) {
+  .skill-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    color: var(--main-color);
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+
   .typing-text span::before {
     font-size: 3rem;
     content: "Backend Dev";
