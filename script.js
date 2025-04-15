@@ -16,7 +16,7 @@ mailtoFormBtn.addEventListener('click', event => {
     const phoneNumber = document.getElementById('number').value;
     const subject = document.getElementById('subject').value;
     const body = `Name: ${name} Email: ${email} Phone Number: ${phoneNumber} Message: ${message}`;
-    const mailtoLink = `mailto:williamonyejiaka08062528003@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:williamonyejiaka2025@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
 });
 
