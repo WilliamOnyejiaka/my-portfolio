@@ -167,7 +167,7 @@ section {
 @keyframes words {
   0%,
   20% {
-    content: "Frontend Developer";
+    content: "Systems Designer";
   }
 
   21%,
@@ -750,7 +750,7 @@ section {
 @keyframes words-mobile {
   0%,
   20% {
-    content: "Frontend Dev";
+    content: "Sys Designer";
   }
   21%,
   40% {
@@ -766,6 +766,6 @@ section {
   }
   81%,
   100% {
-    content: "API Develpoer";
+    content: "API Developer";
   }
 }
